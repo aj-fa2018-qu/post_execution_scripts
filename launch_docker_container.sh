@@ -9,4 +9,4 @@
 source ~/.profile
 
 sudo docker run --name project -td -p 80:8080 --mac-address=$MAC_ADDRESS $DOCKER_IMAGE_NAME
-sudo docker exec project /bin/sh -c 'if [ -f run.sh ]; then (bash run.sh fi)' 
+sudo docker exec project /bin/sh -c 'if [ -f run.sh ]; then (bash run.sh) fi' 
